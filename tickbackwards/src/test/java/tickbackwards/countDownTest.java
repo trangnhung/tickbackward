@@ -1,9 +1,7 @@
 package tickbackwards;
 
 import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 import org.junit.Test;
-
 import junit.framework.TestCase;
 
 public class countDownTest extends TestCase {
@@ -24,7 +22,6 @@ public class countDownTest extends TestCase {
 
 	public void testCountDown(int second) {
 		LocalDateTime before = LocalDateTime.now();
-		DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");
 		CountDownClock countDown = new CountDownClock();
 		countDown.countDownTime(second);
 		LocalDateTime after = LocalDateTime.now();
