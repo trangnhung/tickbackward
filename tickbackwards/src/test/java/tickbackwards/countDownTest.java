@@ -2,13 +2,10 @@ package tickbackwards;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
-import java.util.concurrent.ExecutionException;
-
 import org.junit.Test;
 
 import junit.framework.TestCase;
 
-@SuppressWarnings("restriction")
 public class countDownTest extends TestCase {
 	@Test
 	public void testCountDown_10s() {
